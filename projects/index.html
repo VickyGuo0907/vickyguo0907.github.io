@@ -8,7 +8,16 @@
   <title>Projects — Vicky Guo</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23e90b54'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='34' font-weight='900' fill='white'%3Ev.%3C/text%3E%3C/svg%3E">
   <link rel="canonical" href="https://vickyguo0907.github.io/projects/">
-  <link rel="stylesheet" href="../styles.css?v=9b2de88d">
+  <link rel="stylesheet" href="../styles.css?v=20261001-services">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Vicky Guo">
+  <meta property="og:description" content="Practical software, automation, and AI. Explore my projects and work with me to choose and deliver the right solution.">
+  <meta property="og:url" content="https://vickyguo0907.github.io/projects/">
+  <meta property="og:image" content="https://vickyguo0907.github.io/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vicky Guo — Real problems. The right solutions.">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -30,15 +39,15 @@
         <div class="work-grid">
           <article class="work-card">
             <p class="work-meta"><span>01</span><span>Proof of concept + article</span></p>
-            <h3>Config-driven ML pipeline</h3>
+            <h3>Config-driven ML pipeline</h3><img class="project-diagram" src="../assets/ml-pipeline.svg" alt="ML pipeline overview" width="600" height="158" loading="lazy">
             <p>A reusable machine-learning pipeline on Airflow, MLflow, FastAPI, and Docker. Adding a dataset takes a new config folder, not new code — three demo pipelines (hospital readmissions, gene expression, energy load forecasting) run on the same codebase.</p>
-            <p class="work-why"><strong>Judgment call:</strong> an early version scored a test R² of ~0.22. I traced it to a field that was really a proxy for the target, removed it, and reported the honest ~0.05–0.07 instead.</p>
-            <ul class="work-stack" aria-label="Technologies"><li>Airflow</li><li>MLflow</li><li>FastAPI</li><li>Docker</li><li>CI</li></ul>
+            <p class="work-why"><strong>Judgment call:</strong> in a hospital-readmission forecasting experiment, I investigated a feature that reflected past readmission performance, removed it to test the remaining predictors, and documented the lower score and the limits of the model.</p>
+            <details class="project-context"><summary>Read the forecasting context</summary><p>This experiment predicts hospitals’ 2025 pneumonia excess readmission ratios from 2024 quality measures. Removing a summary of historical readmission performance reduced test R² from approximately 0.22 to 0.05–0.07. This shows the limited predictive strength of the remaining features; it is not evidence of deployment readiness. A historical feature may be valid if it is available at prediction time. The feature’s provenance, timing, and comparison with a historical-performance baseline need to be considered when interpreting the result.</p></details><ul class="work-stack" aria-label="Technologies"><li>Airflow</li><li>MLflow</li><li>FastAPI</li><li>Docker</li><li>CI</li></ul>
             <div class="work-links"><a href="https://github.com/VickyGuo0907/ml_pipeline" target="_blank" rel="noopener noreferrer">View code ↗</a><a href="https://medium.com/@vicky.guo97/notebooks-are-still-the-right-tool-for-experiments-not-production-56da1b2832a5" target="_blank" rel="noopener noreferrer">Read the article ↗</a></div>
           </article>
           <article class="work-card">
             <p class="work-meta"><span>02</span><span>Proof of concept + article</span></p>
-            <h3>Workflow automation &amp; testing with Prefect</h3>
+            <h3>Workflow automation &amp; testing with Prefect</h3><img class="project-diagram" src="../assets/prefect-workflows.svg" alt="Workflow testing overview" width="600" height="158" loading="lazy">
             <p>Uses Prefect orchestration to automate API-level and end-to-end integration testing of data workflows, with scheduled and automation-triggered worker pools running in containers.</p>
             <p class="work-why"><strong>Why it matters:</strong> a lightweight, flexible pipeline keeps data reliable for analysis and ML/AI work — because better AI starts with better data.</p>
             <ul class="work-stack" aria-label="Technologies"><li>Prefect</li><li>Python</li><li>Containers</li></ul>
@@ -46,7 +55,7 @@
           </article>
           <article class="work-card">
             <p class="work-meta"><span>03</span><span>Reference implementation</span></p>
-            <h3>RAG technique reference</h3>
+            <h3>RAG technique reference</h3><img class="project-diagram" src="../assets/rag-reference.svg" alt="RAG comparison overview" width="600" height="158" loading="lazy">
             <p>Twelve working retrieval-augmented generation techniques — from naive RAG to Self-RAG, Graph RAG, and RAPTOR — each built in both LangChain and LlamaIndex, run on a local LLM, and scored with RAGAS.</p>
             <p class="work-why"><strong>Why it matters:</strong> choosing a RAG design means comparing trade-offs side by side, not defaulting to one pattern.</p>
             <ul class="work-stack" aria-label="Technologies"><li>LangChain</li><li>LlamaIndex</li><li>ChromaDB</li><li>RAGAS</li><li>Local LLM</li></ul>
@@ -54,7 +63,7 @@
           </article>
           <article class="work-card">
             <p class="work-meta"><span>04</span><span>Comparison study + article</span></p>
-            <h3>LLM &amp; RAG evaluation, compared</h3>
+            <h3>LLM &amp; RAG evaluation, compared</h3><img class="project-diagram" src="../assets/ai-evaluation.svg" alt="Evaluation study overview" width="600" height="158" loading="lazy">
             <p>Evaluates the same LLM and RAG systems with DeepEval, MLflow, and Ragas on local models, then maps which framework fits which job.</p>
             <p class="work-why"><strong>Why it matters:</strong> AI output should be measured, not assumed — and the right evaluation tool depends on the question.</p>
             <ul class="work-stack" aria-label="Technologies"><li>DeepEval</li><li>MLflow</li><li>Ragas</li><li>Ollama</li><li>LM Studio</li></ul>
