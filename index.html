@@ -16,7 +16,7 @@
 <div class="pink-world" id="home">
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Vicky Guo home"><span class="brand-mark" aria-hidden="true">v.</span><span>VICKY GUO</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#focus">What I do</a><a href="#career">Career</a><a href="#beyond">Beyond</a><a href="#connect">Connect</a></nav>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#focus">What I do</a><a href="#career">Career</a><a href="#beyond">Beyond</a><a href="#connect">Connect</a></nav>
     <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
   </header>
 </div>
@@ -27,7 +27,7 @@
         <p class="eyebrow"><span class="tiny-cross" aria-hidden="true">✳</span> A LITTLE INTRODUCTION</p>
         <h1 id="hero-title">A curious <br>mind.<br><span class="serif">A builder’s</span> <br>heart.</h1>
         <p class="hero-description">I’m Vicky, an AI engineer and solution architect with 17+ years of enterprise product experience. I help teams solve business problems with practical software, automation, and AI — from understanding the need to delivering the solution.</p>
-        <div class="hero-actions"><a class="button button-dark" href="mailto:Vicky.guo97@gmail.com?subject=Project%20inquiry%20for%20Vicky%20Guo">Discuss a project</a><a class="button button-outline" href="mailto:Vicky.guo97@gmail.com?subject=Career%20opportunity%20for%20Vicky%20Guo">Discuss a role</a></div>
+        <a class="button button-dark" href="mailto:Vicky.guo97@gmail.com?subject=Project%20or%20role%20for%20Vicky%20Guo">Discuss a project or role</a>
       </div>
       <div class="hero-scene" id="hero-scene" aria-label="Vicky’s character stage">
         <div class="scene-watermark" aria-hidden="true">VICKY</div>
@@ -69,9 +69,48 @@
         </div>
       </div>
     </section>
+    <section class="work section-wrap" id="work" aria-labelledby="work-title">
+      <div class="section-index"><span>02 / SELECTED WORK</span><span>HOW I CHOOSE AND BUILD.</span></div>
+      <div class="section-heading"><h2 id="work-title">Selected <em>work.</em></h2><p>Personal projects and proofs of concept, each with the reasoning behind it.</p></div>
+      <div class="work-grid">
+        <article class="work-card">
+          <p class="work-meta"><span>01</span><span>Proof of concept</span></p>
+          <h3>Config-driven ML pipeline</h3>
+          <p>A reusable machine-learning pipeline on Airflow, MLflow, FastAPI, and Docker. Adding a dataset takes a new config folder, not new code — three demo pipelines (hospital readmissions, gene expression, energy load forecasting) run on the same codebase.</p>
+          <p class="work-why"><strong>Judgment call:</strong> an early version scored a test R² of ~0.22. I traced it to a field that was really a proxy for the target, removed it, and reported the honest ~0.05–0.07 instead.</p>
+          <ul class="work-stack" aria-label="Technologies"><li>Airflow</li><li>MLflow</li><li>FastAPI</li><li>Docker</li><li>CI</li></ul>
+          <div class="work-links"><a href="https://github.com/VickyGuo0907/ml_pipeline" target="_blank" rel="noopener noreferrer">View code ↗</a></div>
+        </article>
+        <article class="work-card">
+          <p class="work-meta"><span>02</span><span>Proof of concept + article</span></p>
+          <h3>Workflow automation &amp; testing with Prefect</h3>
+          <p>Uses Prefect orchestration to automate API-level and end-to-end integration testing of data workflows, with scheduled and automation-triggered worker pools running in containers.</p>
+          <p class="work-why"><strong>Why automation, not AI:</strong> the job was repeatable, rule-based validation — dependable orchestration fits better than a model.</p>
+          <ul class="work-stack" aria-label="Technologies"><li>Prefect</li><li>Python</li><li>Containers</li></ul>
+          <div class="work-links"><a href="https://github.com/VickyGuo0907/prefect-poc-project" target="_blank" rel="noopener noreferrer">View code ↗</a><a href="blog/2024/01/28/test-and-validate-data-pipelinesworkflows-with-prefect/">Read the write-up</a></div>
+        </article>
+        <article class="work-card">
+          <p class="work-meta"><span>03</span><span>Reference implementation</span></p>
+          <h3>RAG technique reference</h3>
+          <p>Twelve working retrieval-augmented generation techniques — from naive RAG to Self-RAG, Graph RAG, and RAPTOR — each built in both LangChain and LlamaIndex, run on a local LLM, and scored with RAGAS.</p>
+          <p class="work-why"><strong>Why it matters:</strong> choosing a RAG design means comparing trade-offs side by side, not defaulting to one pattern.</p>
+          <ul class="work-stack" aria-label="Technologies"><li>LangChain</li><li>LlamaIndex</li><li>ChromaDB</li><li>RAGAS</li><li>Local LLM</li></ul>
+          <div class="work-links"><a href="https://github.com/VickyGuo0907/rag_implementations" target="_blank" rel="noopener noreferrer">View code ↗</a><span class="work-credit">Based on <a href="https://github.com/NirDiamant/RAG_Techniques" target="_blank" rel="noopener noreferrer">NirDiamant/RAG_Techniques</a></span></div>
+        </article>
+        <article class="work-card">
+          <p class="work-meta"><span>04</span><span>Comparison study</span></p>
+          <h3>LLM &amp; RAG evaluation, compared</h3>
+          <p>Evaluates the same LLM and RAG systems with DeepEval, MLflow, and Ragas on local models, then maps which framework fits which job.</p>
+          <p class="work-why"><strong>Why it matters:</strong> AI output should be measured, not assumed — and the right evaluation tool depends on the question.</p>
+          <ul class="work-stack" aria-label="Technologies"><li>DeepEval</li><li>MLflow</li><li>Ragas</li><li>Ollama</li><li>LM Studio</li></ul>
+          <div class="work-links"><a href="https://github.com/VickyGuo0907/ai_evaluation_project" target="_blank" rel="noopener noreferrer">View code ↗</a></div>
+        </article>
+      </div>
+      <a class="work-all" href="projects/">All projects &amp; learning →</a>
+    </section>
     <section class="focus-section" id="focus" aria-labelledby="focus-title">
       <div class="section-wrap">
-        <div class="section-index"><span>02 / WHAT I DO</span><span>IDEAS INTO SOMETHING USEFUL.</span></div>
+        <div class="section-index"><span>03 / WHAT I DO</span><span>IDEAS INTO SOMETHING USEFUL.</span></div>
         <div class="section-heading"><h2 id="focus-title">Curiosity, <em>applied.</em></h2><p>From the right question to the right solution.</p></div>
         <div class="focus-list">
           <details open><summary><span class="focus-number">01</span><span class="focus-name">Understand the problem</span><span class="focus-tag">PROBLEM FRAMING</span><span class="expand-icon" aria-hidden="true"></span></summary><div class="focus-body"><p>Start with the people, goals, and constraints. Clarify what needs to change and what success looks like before choosing the technology.</p><ul class="tags"><li>User needs</li><li>Goals &amp; constraints</li><li>Success criteria</li></ul></div></details>
@@ -82,7 +121,7 @@
     </section>
     <section class="career-section" id="career" aria-labelledby="career-title">
       <div class="section-wrap">
-        <div class="section-index"><span>03 / NEXT CAREER PATH</span><span>EXPERIENCE MEETS WHAT’S NEXT.</span></div>
+        <div class="section-index"><span>04 / NEXT CAREER PATH</span><span>EXPERIENCE MEETS WHAT’S NEXT.</span></div>
         <div class="career-layout">
           <div><p class="eyebrow">OPEN TO THE RIGHT OPPORTUNITY</p><h2 id="career-title">The right <em>solutions!</em></h2><p class="career-lede">AI where it adds value. Automation where it makes sense. I bring an end-to-end perspective to choosing and delivering the solution that best fits the problem.</p></div>
           <div class="career-copy"><p>I’m looking for AI Engineer &amp; Solution Architect roles, where I can help teams turn real business problems into useful, reliable AI products.</p><p>With 17+ years across software development, architecture, and product ownership, I connect business needs with technical delivery. I want to help teams choose the right approach, build reliable data and AI workflows, and take solutions from an early idea into production.</p><div class="career-actions"><a class="button button-dark" href="mailto:Vicky.guo97@gmail.com?subject=Career%20opportunity%20for%20Vicky%20Guo">Let’s discuss a role</a><a class="career-profile" href="https://www.linkedin.com/in/vicky-guo-aa278318" target="_blank" rel="noopener noreferrer">View my LinkedIn</a></div><p class="career-note">Résumé available on request.</p></div>
@@ -90,7 +129,7 @@
       </div>
     </section>
     <section class="beyond section-wrap" id="beyond" aria-labelledby="beyond-title">
-      <div class="section-index"><span>04 / BEYOND THE SCREEN</span><span>THERE’S MORE TO THE STORY.</span></div>
+      <div class="section-index"><span>05 / BEYOND THE SCREEN</span><span>THERE’S MORE TO THE STORY.</span></div>
       <div class="beyond-grid"><div><p class="eyebrow">GROWTH WITH PURPOSE</p><h2 id="beyond-title">Always learning.<br>Living with <em>purpose.</em></h2><p class="beyond-intro">I set goals that give life meaning — and work toward them with curiosity, discipline, and consistent practice. There’s always something new to learn and another level to pursue.</p></div>
         <div class="interests"><article><span class="interest-symbol" aria-hidden="true">01</span><div><h3>Lifelong learning</h3><p>Ask me about something I don’t know today, and tomorrow I’ll be learning it and trying it hands-on. Curiosity becomes progress through practice.</p></div></article><article><span class="interest-symbol" aria-hidden="true">02</span><div><h3>Tennis</h3><p>A self-taught 3.5+ level player, consistently working toward a higher level. Every practice is a chance to refine my skills and raise my game.</p></div></article><article><span class="interest-symbol" aria-hidden="true">03</span><div><h3>Taekwondo</h3><p>Eight years of disciplined training and a third-degree black belt. A practice built on commitment, solid fundamentals, and steady growth.</p></div></article></div>
       </div>
@@ -107,7 +146,7 @@
       <span class="closing-spark" aria-hidden="true">✳</span>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">v.</span><span>VICKY GUO</span></a><nav class="footer-history" aria-label="Earlier work"><a href="archive/">Original site archive</a><a href="archive/blog/">Earlier writing</a><a href="archive/projects/">Earlier projects</a></nav><span>© <span id="year">2026</span> VICKY GUO</span></footer>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">v.</span><span>VICKY GUO</span></a><nav class="footer-history" aria-label="Earlier work"><a href="archive/">Original site archive</a><a href="archive/blog/">Earlier writing</a><a href="projects/">All projects</a></nav><span>© <span id="year">2026</span> VICKY GUO</span></footer>
   <dialog id="artwork-dialog" aria-labelledby="artwork-title"><div class="dialog-header"><h2 id="artwork-title">The original off-duty me.</h2><button id="close-artwork" type="button" aria-label="Close original artwork">×</button></div><img src="assets/anime-sticker.png" alt="Vicky’s original full-body anime sticker artwork in a navy cap, sunglasses, and camouflage trousers" width="1024" height="1024"><p>A little personality, in sticker form.</p></dialog>
 </body>
 </html>
