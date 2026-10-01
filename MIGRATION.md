@@ -21,3 +21,9 @@ Public URL: https://vickyguo0907.github.io/
 ## Restore
 
 To restore the original design, make a new commit placing the contents of `archive/` at the root, keeping the archive itself intact. Do not force-push or erase history.
+
+## Old addresses (2026-10-01)
+
+- `git-home` (`gh-pages`) now serves a redirect: `/git-home/<path>` → `/<path>` on this site. Previous output is kept in `archive/published-before-redesign-2026-09-30`; source in `main`. Repo archived.
+- `my-git-home` Pages now publishes the `redirect` branch, which sends every path to the homepage. `main` is unchanged. Repo archived.
+- To undo either: unarchive the repo, then point Pages back at the original branch (or revert the redirect commit).
