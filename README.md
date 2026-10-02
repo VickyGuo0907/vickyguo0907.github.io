@@ -3,7 +3,7 @@
 Personal introduction, enterprise product experience, career direction, writing, and interests.
 
 - Live URL: https://vickyguo0907.github.io/
-- Original repository and history: https://github.com/VickyGuo0907/git-home-archive
+- Original source and history: private repos `VickyGuo0907/git-home` (MkDocs) and `VickyGuo0907/my-git-home` (Jekyll)
 - Browsable original site: [archive/](archive/)
 
 ## Preview
