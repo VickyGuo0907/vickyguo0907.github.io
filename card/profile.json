@@ -3,14 +3,12 @@
   "givenName": "Vicky",
   "familyName": "Guo",
   "title": "AI Engineer & Solution Architect",
-  "description": "I turn business problems into practical software, automation, and AI — from understanding the need to delivering the solution.",
+  "description": "Contact Vicky Guo, AI Engineer & Solution Architect. Save my contact details or connect by email and LinkedIn.",
   "email": "Vicky.guo97@gmail.com",
   "website": "https://vickyguo0907.github.io/",
   "cardUrl": "https://vickyguo0907.github.io/card/",
   "linkedin": "https://www.linkedin.com/in/vicky-guo-aa278318",
   "github": "https://github.com/VickyGuo0907",
-  "writing": "https://medium.com/@vicky.guo97",
-  "expertise": ["Workflow automation", "RAG & evaluation", "Architecture & delivery"],
   "portrait": "../assets/profile.jpg",
   "portraitAlt": "Vicky’s illustrated profile: a thoughtful coder with glasses at a computer"
 }

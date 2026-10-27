@@ -2,7 +2,7 @@
 
 Public NFC/QR entry point: **https://vickyguo0907.github.io/card/**
 
-This is a static page in the existing GitHub Pages site. It uses the site's existing portrait, locally hosted fonts, colors and verified public contact links. Save Contact, portfolio, email and professional links work without JavaScript. JavaScript adds sharing, copy-link fallback and a keyboard-accessible QR dialog. It adds no external analytics, API calls or third-party QR service.
+This is a compact contact page in the existing GitHub Pages site: name, role, highlighted email, LinkedIn, GitHub, Save Contact, sharing and QR. A single portfolio link leads to the full introduction; biography, expertise, writing and slogans stay on the main site. It uses the site's existing portrait, locally hosted fonts, colors and verified public contact links. Save Contact, portfolio, email and professional links work without JavaScript. JavaScript adds sharing, copy-link fallback and a keyboard-accessible QR dialog. It adds no external analytics, API calls or third-party QR service.
 
 ## Edit once, generate both outputs
 
