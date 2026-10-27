@@ -2,3 +2,5 @@
 .playwright-mcp/
 .venv-card/
 __pycache__/
+.coverage
+.pytest_cache/
