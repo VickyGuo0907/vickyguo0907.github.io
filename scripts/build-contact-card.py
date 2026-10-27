@@ -36,7 +36,7 @@ def main():
     parser.add_argument('--qr', action='store_true', help='Regenerate the QR SVG (requires qrcode==8.2).')
     args = parser.parse_args()
     profile = json.loads((CARD / 'profile.json').read_text(encoding='utf-8'))
-    for key in ('website', 'cardUrl', 'linkedin', 'github', 'writing'):
+    for key in ('website', 'cardUrl', 'linkedin', 'github'):
         parsed = urlparse(profile[key])
         if parsed.scheme != 'https' or not parsed.netloc:
             raise ValueError(f'{key} must be an absolute HTTPS URL')
@@ -61,15 +61,13 @@ def main():
     escaped = {key: html.escape(str(value), quote=True) for key, value in profile.items() if isinstance(value, str)}
     email_url = 'mailto:' + quote(profile['email'], safe='@.')
     variables = {
-        'name': escaped['name'], 'given_name': escaped['givenName'], 'title': escaped['title'],
+        'name': escaped['name'], 'title': escaped['title'],
         'description': escaped['description'], 'email': escaped['email'], 'email_url': email_url,
-        'project_email_url': email_url + '?subject=' + quote('Project inquiry for ' + profile['name']),
-        'website': escaped['website'], 'work_url': escaped['website'] + '#work',
+        'website': escaped['website'],
         'card_url': escaped['cardUrl'], 'display_url': html.escape(card_url.removeprefix('https://')),
         'portrait': escaped['portrait'], 'portrait_alt': escaped['portraitAlt'],
         'social_image': escaped['website'] + 'assets/social-preview.png',
-        'linkedin': escaped['linkedin'], 'github': escaped['github'], 'writing': escaped['writing'],
-        'expertise': ''.join('<li>' + html.escape(item) + '</li>' for item in profile['expertise']),
+        'linkedin': escaped['linkedin'], 'github': escaped['github'],
         'css_version': hashlib.sha256((CARD / 'card.css').read_bytes()).hexdigest()[:8],
         'js_version': hashlib.sha256((CARD / 'card.js').read_bytes()).hexdigest()[:8],
     }

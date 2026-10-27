@@ -22,44 +22,32 @@
   <a class="skip-link" href="#contact">Skip to contact details</a>
   <div class="page-shell">
     <header class="page-header">
-      <a class="brand" href="$website" aria-label="$name’s portfolio"><span class="brand-mark" aria-hidden="true">v.</span><span>$name</span></a>
+      <span class="card-label"><span class="hello-dot" aria-hidden="true"></span>CONTACT CARD</span>
       <button class="utility-button" id="share-card" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 14v6h14v-6"/></svg>Share card</button>
     </header>
 
     <main id="contact" class="contact-layout">
-      <aside class="identity-panel" aria-label="A little introduction">
-        <div class="panel-top"><span>A LITTLE INTRODUCTION</span><span aria-hidden="true">✳</span></div>
-        <div class="portrait-frame"><img src="$portrait" alt="$portrait_alt" width="1012" height="1012" fetchpriority="high"></div>
-        <p class="signature" aria-hidden="true">$given_name.</p>
-        <p class="panel-line">A curious mind.<br> A builder’s heart.</p>
-        <p class="panel-note">Build. Learn. Make it better.</p>
-      </aside>
-
       <section class="contact-content" aria-labelledby="contact-name">
-        <p class="eyebrow"><span class="hello-dot" aria-hidden="true"></span>NICE TO MEET YOU</p>
-        <h1 id="contact-name">$name</h1>
-        <p class="role">$title</p>
-        <p class="intro">$description</p>
+        <div class="identity">
+          <img class="portrait" src="$portrait" alt="$portrait_alt" width="72" height="72" fetchpriority="high">
+          <div><h1 id="contact-name">$name</h1><p class="role">$title</p></div>
+        </div>
 
         <div class="primary-actions">
           <a class="button button-primary" href="contact.vcf" download="Vicky-Guo.vcf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Save contact</a>
-          <a class="button button-secondary" href="$work_url">Explore my work<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
 
-        <ul class="expertise" aria-label="Areas I work in">$expertise</ul>
 
         <nav class="contact-links" aria-label="Contact and professional profiles">
-          <a href="$email_url"><span class="link-icon" aria-hidden="true">@</span><span class="link-copy"><span class="link-label">EMAIL</span><span class="link-value">$email</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
-          <a href="$linkedin" target="_blank" rel="noopener noreferrer"><span class="link-icon linkedin-icon" aria-hidden="true">in</span><span class="link-copy"><span class="link-label">LINKEDIN</span><span class="link-value">Connect professionally</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
-          <a href="$github" target="_blank" rel="noopener noreferrer"><span class="link-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="link-copy"><span class="link-label">GITHUB</span><span class="link-value">Explore my code</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
-          <a href="$writing" target="_blank" rel="noopener noreferrer"><span class="link-icon writing-icon" aria-hidden="true">M</span><span class="link-copy"><span class="link-label">WRITING</span><span class="link-value">Ideas, experiments & lessons</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="email-link" href="$email_url"><span class="link-icon" aria-hidden="true">@</span><span class="link-copy"><span class="link-label">EMAIL</span><span class="link-value">$email</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+          <a href="$linkedin" target="_blank" rel="noopener noreferrer"><span class="link-icon linkedin-icon" aria-hidden="true">in</span><span class="link-copy"><span class="link-label">LINKEDIN</span><span class="link-value">Vicky Guo</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="$github" target="_blank" rel="noopener noreferrer"><span class="link-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="link-copy"><span class="link-label">GITHUB</span><span class="link-value">VickyGuo0907</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
         </nav>
 
-        <div class="connect-note"><span aria-hidden="true">✳</span><div><p>Have a problem worth solving?</p><a href="$project_email_url">Let’s discuss your project <span aria-hidden="true">↗</span></a></div></div>
       </section>
     </main>
 
-    <footer class="page-footer"><span>Real problems. <em>The right solutions.</em></span><a class="qr-link" href="qr.svg" id="show-qr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h6v6H3zm12 0h6v6h-6zM3 15h6v6H3zm12 0h3v3h3v3h-6zm6-3h-3m-6 0v3m0 6v-3"/></svg>Show QR code</a></footer>
+    <footer class="page-footer"><a class="portfolio-link" href="$website">View full portfolio <span aria-hidden="true">↗</span></a><a class="qr-link" href="qr.svg" id="show-qr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h6v6H3zm12 0h6v6h-6zM3 15h6v6H3zm12 0h3v3h3v3h-6zm6-3h-3m-6 0v3m0 6v-3"/></svg>Show QR code</a></footer>
     <p class="status-message" id="share-status" role="status" aria-live="polite"></p>
     <div class="copy-fallback" id="copy-fallback" hidden><label for="card-link">Copy this link to share</label><input id="card-link" type="url" value="$card_url" readonly></div>
   </div>
