@@ -34,14 +34,14 @@
         </div>
 
         <div class="primary-actions">
-          <a class="button button-primary" href="contact.vcf" download="Vicky-Guo.vcf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Save contact</a>
+          <a class="button button-primary" href="contact.vcf" download="$file_slug.vcf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Save contact</a>
         </div>
 
 
         <nav class="contact-links" aria-label="Contact and professional profiles">
           <a class="email-link" href="$email_url"><span class="link-icon" aria-hidden="true">@</span><span class="link-copy"><span class="link-label">EMAIL</span><span class="link-value">$email</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
-          <a href="$linkedin" target="_blank" rel="noopener noreferrer"><span class="link-icon linkedin-icon" aria-hidden="true">in</span><span class="link-copy"><span class="link-label">LINKEDIN</span><span class="link-value">Vicky Guo</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
-          <a href="$github" target="_blank" rel="noopener noreferrer"><span class="link-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="link-copy"><span class="link-label">GITHUB</span><span class="link-value">VickyGuo0907</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="$linkedin" target="_blank" rel="noopener noreferrer"><span class="link-icon linkedin-icon" aria-hidden="true">in</span><span class="link-copy"><span class="link-label">LINKEDIN</span><span class="link-value">$linkedin_label</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="$github" target="_blank" rel="noopener noreferrer"><span class="link-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="link-copy"><span class="link-label">GITHUB</span><span class="link-value">$github_label</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
         </nav>
 
       </section>
@@ -58,7 +58,7 @@
     <p id="qr-description">Open your phone’s camera to view my contact card.</p>
     <img class="qr-image" src="qr.svg" width="290" height="290" alt="QR code for $name’s contact page">
     <p class="qr-name">$name</p><p class="qr-address">$display_url</p>
-    <div class="dialog-actions"><a class="button button-primary" href="qr.svg" download="Vicky-Guo-QR.svg">Download QR</a><button class="button button-secondary" id="copy-link" type="button">Copy link</button></div>
+    <div class="dialog-actions"><a class="button button-primary" href="qr.svg" download="$file_slug-QR.svg">Download QR</a><button class="button button-secondary" id="copy-link" type="button">Copy link</button></div>
     <p class="qr-status" id="qr-status" role="status" aria-live="polite"></p>
   </dialog>
 </body>

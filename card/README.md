@@ -6,11 +6,12 @@ This is a compact contact page in the existing GitHub Pages site: name, role, hi
 
 ## Edit once, generate both outputs
 
-1. Update `profile.json` with details you intend to make public.
+1. Update `profile.json` with details you intend to make public. Every visible value comes from it, including the LinkedIn/GitHub labels (`linkedinLabel`, `githubLabel`), the downloaded file names (`fileSlug`) and the saved contact's note (`contactNote`).
 2. Run `python3 scripts/build-contact-card.py` from the repository root.
-3. Commit the configuration and generated `card/index.html` and `card/contact.vcf` together. Styles and script hashes are refreshed automatically.
+3. Run `pytest scripts/` to confirm the generated files are current and valid.
+4. Commit the configuration and generated `card/index.html` and `card/contact.vcf` together. Styles and script hashes are refreshed automatically.
 
-Edit `template.html` for layout changes; `index.html` is generated. Contact export uses vCard 3.0, UTF-8 and CRLF with byte-safe line folding. No phone number or address is included because none was provided. Updating this page does not silently update contact copies that someone has already saved.
+Edit `template.html` for layout changes; `index.html` is generated. Contact export uses vCard 3.0, UTF-8 and CRLF with byte-safe line folding. LinkedIn and GitHub are saved as `X-SOCIALPROFILE` fields (tappable on iPhone) and repeated in the note for other contact apps. No phone number or address is included because none was provided. Updating this page does not silently update contact copies that someone has already saved.
 
 ## Change the entry URL or domain
 
