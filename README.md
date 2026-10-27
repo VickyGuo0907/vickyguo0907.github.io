@@ -5,6 +5,7 @@ Personal introduction, enterprise product experience, career direction, writing,
 - Live URL: https://vickyguo0907.github.io/
 - Original source and history: private repos `VickyGuo0907/git-home` (MkDocs) and `VickyGuo0907/my-git-home` (Jekyll)
 - Browsable original site: [archive/](archive/)
+- NFC / QR contact page: [card/](card/) — see [contact-card setup](card/README.md) for editing, vCard export and programming the tag.
 
 ## Preview
 
